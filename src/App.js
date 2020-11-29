@@ -1,23 +1,23 @@
-import logo from './logo.svg';
 import './App.css';
+import SubTitle from './SubTitle';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <div className="app">
+      <header className="app-header">
+        <SubTitle />
+        <h1 className="app-title">
+          Daniel Harbor
+        </h1>
       </header>
+      <footer className="app-footer">
+        <a href="https://linkedin.com/in/danielharbor">
+          <img className="icon github-icon" alt="" src="github-icon.png" title="Daniel Harbor on GitHub"/>
+        </a>
+        <a href="https://github.com/danielharbor">
+          <img className="icon linkedin-icon" alt="" src="linkedin-icon.png" title="Daniel Harbor on LinkedIn"/>
+        </a>
+      </footer>
     </div>
   );
 }
