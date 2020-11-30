@@ -1,31 +1,28 @@
 import React from 'react';
+import { useEffect, useRef, useState } from 'react';
 
-class SubTitle extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {message: ""};
-  }
+function SubTitle(props) {
+  const [message, setMessage] = useState("");
+  const messageRef = useRef(message);
+  messageRef.current = message;
 
-  componentDidMount() {
-    const showText = (message, index) => {
-      if (index < message.length) {
-        this.setState({
-          message: this.state.message + message[index++]
-        });
-        let interval = index < message.length && message[index] !== ' ' ? 200 : 0;
-        setTimeout(() => showText(message, index), interval);
+  useEffect(() => {
+    const showText = (val, index) => {
+      if (index < val.length) {
+        setMessage(messageRef.current + val[index++]);
+        let interval = index < val.length && val[index] !== ' ' ? 200 : 0;
+        setTimeout(() => showText(val, index), interval);
       }
     };
     showText("the making of", 0);
-  }
+    return () => messageRef.current = "";
+  }, []);
 
-  render() {
-    return (
-      <div>
-        <p className="subtitle">{this.state.message}</p>
-      </div>
-    );
-  }
+  return (
+    <div>
+      <p className="subtitle">{message}</p>
+    </div>
+  );
 }
 
 export default SubTitle;
