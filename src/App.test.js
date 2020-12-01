@@ -1,8 +1,13 @@
-import { render, screen } from '@testing-library/react';
+import { render, screen, waitFor } from '@testing-library/react';
 import App from './App';
 
-test('renders learn react link', () => {
+test('renders dh', () => {
   render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+  const dh = screen.getByText("Daniel Harbor");
+  expect(dh).toBeInTheDocument();
+});
+
+test('renders subtitle', async () => {
+  render(<App />);
+  await waitFor(() => expect(screen.getByText(/the making of/)).toBeInTheDocument(), { timeout: 2000 });
 });

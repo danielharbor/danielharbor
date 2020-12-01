@@ -7,15 +7,19 @@ function SubTitle(props) {
   messageRef.current = message;
 
   useEffect(() => {
+    let mounted = true;
     const showText = (val, index) => {
-      if (index < val.length) {
+      if (index < val.length && mounted === true) {
         setMessage(messageRef.current + val[index++]);
-        let interval = index < val.length && val[index] !== ' ' ? 200 : 0;
+        let interval = index < val.length && val[index] !== ' ' ? 150 : 0;
         setTimeout(() => showText(val, index), interval);
       }
     };
     showText("the making of", 0);
-    return () => messageRef.current = "";
+    return () => {
+      messageRef.current = "";
+      mounted = false;
+    };
   }, []);
 
   return (
