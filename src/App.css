@@ -42,12 +42,10 @@
   padding: 0 0 0 5px;
 }
 
-.linkedin-icon {
-  width: 25px;
+.github-icon {
+  width: 26px;
 }
 
-.github-icon {
-  width: 29px;
-  position: relative;
-  top: 0.1rem;
+.linkedin-icon {
+  width: 25px;
 }
