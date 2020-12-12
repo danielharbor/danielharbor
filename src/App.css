@@ -1,10 +1,10 @@
 .app {
-  text-align: center;
+  /* text-align: center; */
 }
 
 .app-header {
   background-color: #f9f9f9;
-  min-height: 100vh;
+  /* min-height: 100vh; */
   display: flex;
   flex-direction: column;
   letter-spacing: -0.1rem;
@@ -48,4 +48,18 @@
 
 .linkedin-icon {
   width: 25px;
+}
+
+.test-component {
+  background-color:black;
+  color: #0f0;
+  font-family: 'Inconsolata', sans-serif; font-weight: bold;
+}
+
+#terminal {
+  white-space: pre;
+}
+
+#b {
+  display: none;
 }

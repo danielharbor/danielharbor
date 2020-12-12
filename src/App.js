@@ -1,6 +1,7 @@
 import './App.css';
 import SubTitle from './SubTitle';
 import FooterIcon from './FooterIcon';
+import TestComponent from './TestComponent';
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
           Daniel Harbor
         </h1>
       </header>
+      <TestComponent />
       <footer className="app-footer">
         <a href="https://linkedin.com/in/danielharbor">
           <FooterIcon
