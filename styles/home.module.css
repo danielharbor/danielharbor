@@ -1,8 +1,8 @@
-.app {
+.home {
   text-align: center;
 }
 
-.app-header {
+.header {
   background-color: #f9f9f9;
   min-height: 100vh;
   display: flex;
@@ -14,38 +14,15 @@
   color: white;
 }
 
-.subtitle {
-  color: #21211f;
-  font-size: 0.9rem;
-  line-height: 0;
-  letter-spacing: 0.135rem;
-  padding: 0 23rem 0 0;
-  font-family: monospace;
-  font-style: normal;
-  font-weight: 400;
-}
-
-.app-title {
+.title {
   color: #21211f;
   font-size: 6.35rem;
   font-weight: 600;
   font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, Sans-Serif;
 }
 
-.app-footer {
+.footer {
   position: absolute;
   bottom: 35px;
   width: 100%;
-}
-
-.icon {
-  padding: 0 0 0 5px;
-}
-
-.github-icon {
-  width: 26px;
-}
-
-.linkedin-icon {
-  width: 25px;
 }

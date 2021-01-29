@@ -1,7 +1,8 @@
 import React from 'react';
+import styles from '../styles/subtitle.module.css'
 import { useEffect, useRef, useState } from 'react';
 
-function SubTitle(props) {
+export default function Subtitle(props) {
   const [message, setMessage] = useState("");
   const messageRef = useRef(message);
   messageRef.current = message;
@@ -24,9 +25,7 @@ function SubTitle(props) {
 
   return (
     <div>
-      <p className="subtitle">{message}</p>
+      <p className={styles.subtitle}>{message}</p>
     </div>
   );
 }
-
-export default SubTitle;
