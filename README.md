@@ -15,4 +15,4 @@ Here are some ideas to get you started:
 - ⚡ Fun fact: ...
 -->
 
-🔭 I’m currently working on making danielharbor.com
+🔭 I’m currently working on making danielharbor.com (aka danielharbor.vercel.app)
