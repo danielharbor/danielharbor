@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata');
+
+.console {
+  background-color: black;
+  color: #0f0;
+  font-family: 'Inconsolata', sans-serif;
+  white-space: pre;
+  height: 100vh;
+  overflow: auto;
+  padding: 10px;
+}
+
+#b {
+  display: none;
+}
