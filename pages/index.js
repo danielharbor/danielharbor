@@ -1,16 +1,20 @@
-import Link from 'next/link'
-import styles from '../styles/home.module.css'
-import FooterIcon from '../components/FooterIcon'
-import Subtitle from '../components/Subtitle'
 import Burger from '../components/Burger'
+import FooterIcon from '../components/FooterIcon'
+import Link from 'next/link'
+import Menu from '../components/Menu'
+import React, { useState } from 'react';
+import styles from '../styles/home.module.css'
+import Subtitle from '../components/Subtitle'
 
 export default function Home() {
+  const [open, setOpen] = useState(false);
+
   return (
     <div className={styles.home}>
-      {/* <Link href="/about"> */}
-      {/*   <a>about</a> */}
-      {/* </Link> */}
-      <Burger />
+      <div>
+        <Burger open={open} setOpen={setOpen} />
+        <Menu open={open} setOpen={setOpen} />
+      </div>
       <header className={styles.header}>
         <Subtitle />
         <h1 className={styles.title}>

@@ -1,25 +1,29 @@
+import { bool } from 'prop-types';
 import Link from 'next/link'
 import React from 'react';
 import styles from '../styles/menu.module.css'
-import { StyledMenu } from './Menu.styled';
 
-const Menu = () => {
+const Menu = ({ open }) => {
+  const toggleClass = open ? 'open' : 'close';
+
   return (
-    <div className={styles.menu}>
+    <div className={`${styles.menu} ${styles[toggleClass]}`}>
       <Link href="/about">
-        <a>
-          <span role="img" aria-label="about us">&#x1f481;&#x1f3fb;&#x200d;&#x2642;&#xfe0f;</span>
-          About
+        <a className={styles.link}>
+          about
         </a>
       </Link>
       <Link href="/contact">
-        <a href="/">
-          <span role="img" aria-label="contact">&#x1f4e9;</span>
-          Contact
+        <a className={styles.link}>
+          contact
         </a>
       </Link>
     </div>
   )
+}
+
+Menu.propTypes = {
+  open: bool.isRequired,
 }
 
 export default Menu;
