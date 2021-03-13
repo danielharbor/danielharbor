@@ -2,13 +2,15 @@ import Link from 'next/link'
 import styles from '../styles/home.module.css'
 import FooterIcon from '../components/FooterIcon'
 import Subtitle from '../components/Subtitle'
+import Burger from '../components/Burger'
 
 export default function Home() {
   return (
     <div className={styles.home}>
-      <Link href="/about">
-        <a>about</a>
-      </Link>
+      {/* <Link href="/about"> */}
+      {/*   <a>about</a> */}
+      {/* </Link> */}
+      <Burger />
       <header className={styles.header}>
         <Subtitle />
         <h1 className={styles.title}>
