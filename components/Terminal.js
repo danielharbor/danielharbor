@@ -1,9 +1,8 @@
-import React from 'react';
-import { useEffect } from 'react';
-import Typewriter from '../lib/typewriter';
 import animate from '../lib/animate';
-import useKeypress from '../lib/useKeypress';
+import React, { useEffect } from 'react';
 import styles from '../styles/terminal.module.css'
+import Typewriter from '../lib/typewriter';
+import { useKeypress } from '../lib/hooks';
 import { useRouter } from 'next/router'
 
 export default function Terminal(props) {
