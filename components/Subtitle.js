@@ -24,8 +24,6 @@ export default function Subtitle(props) {
   }, []);
 
   return (
-    <div>
-      <p className={styles.subtitle}>{message}</p>
-    </div>
+    <p className={styles.subtitle}>{message}</p>
   );
 }
