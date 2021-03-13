@@ -7,8 +7,9 @@
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  letter-spacing: -0.1rem;
+  align-items: center;
   justify-content: center;
+  letter-spacing: -0.1rem;
   font-size: calc(10px + 2vmin);
   color: white;
 }
