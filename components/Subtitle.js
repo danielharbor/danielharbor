@@ -12,7 +12,7 @@ export default function Subtitle(props) {
     const showText = (val, index) => {
       if (index < val.length && mounted === true) {
         setMessage(messageRef.current + val[index++]);
-        let interval = index < val.length && val[index] !== ' ' ? 150 : 0;
+        let interval = index < val.length && val[index] !== ' ' ? 220 : 0;
         setTimeout(() => showText(val, index), interval);
       }
     };

@@ -22,7 +22,7 @@ export default function Home() {
         </h1>
       </header>
       <footer className={styles.footer}>
-        <a href="https://linkedin.com/in/danielharbor">
+        <a href="https://github.com/danielharbor">
           <FooterIcon
             src="/github-icon.png"
             srcOnHover="/github-hover.png"
@@ -30,7 +30,7 @@ export default function Home() {
             alt="Daniel Harbor on GitHub"
           />
         </a>
-        <a href="https://github.com/danielharbor">
+        <a href="https://linkedin.com/in/danielharbor">
           <FooterIcon
             src="/linkedin-icon.png"
             srcOnHover="/linkedin-hover.png"
