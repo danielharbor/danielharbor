@@ -2,7 +2,7 @@ import animate from '../lib/animate';
 import React, { useEffect } from 'react';
 import styles from '../styles/terminal.module.css'
 import Typewriter from '../lib/typewriter';
-import { useKeypress } from '../lib/hooks';
+import { useKeypress, useTouch } from '../lib/hooks';
 import { useRouter } from 'next/router'
 
 export default function Terminal(props) {
@@ -16,10 +16,9 @@ export default function Terminal(props) {
     animate(typewriter);
   });
 
-  useKeypress(['Enter', 'Escape'], () => {
-    console.log('return key pressed');
-    router.push('/');
-  });
+  const goHome = () => router.push('/');
+  useKeypress(['Enter', 'Escape'], goHome);
+  useTouch(goHome);
 
   return (
     <div className={styles.console}>
