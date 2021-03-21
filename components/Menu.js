@@ -20,10 +20,14 @@ const Menu = ({ open }) => {
       </Link>
     </div>
   )
-}
+};
 
 Menu.propTypes = {
   open: bool.isRequired,
-}
+};
+
+Menu.defaultProps = {
+  open: false,
+};
 
 export default Menu;

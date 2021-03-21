@@ -12,7 +12,7 @@ const Burger = ({ open, setOpen }) => {
       <div className={`${styles.bun} ${styles[toggleClassBottomBun]}`}/>
     </button>
   )
-}
+};
 
 Burger.propTypes = {
   open: bool.isRequired,
