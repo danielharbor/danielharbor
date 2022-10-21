@@ -15,4 +15,4 @@ Here are some ideas to get you started:
 - ⚡ Fun fact: ...
 -->
 
-🔭 I’m currently working on making https://danielharbor.com
+🔭 Find out more about me at https://danielharbor.com
